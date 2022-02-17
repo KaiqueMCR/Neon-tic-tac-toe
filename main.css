@@ -1,3 +1,11 @@
+:root {
+  --text-color: #fff;
+  --primary-color: #3100e4;
+  --shade-primary: #0026ff;
+  --shadow-primary: #566fff77;
+  --secondary-color: #658eff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,8 +29,9 @@ body {
 
 h1 {
   font-size: 4rem;
-  color: #fff;
-  text-shadow: 0 1px 15px #3100e4, 0 0px 30px #0026ff, 0 0px 50px #566fff77;
+  color: var(--text-color);
+  text-shadow: 0 1px 15px var(--primary-color), 0 0px 30px var(--shade-primary),
+    0 0px 50px var(--shadow-primary);
   animation: shine 2s forwards, flicker 3s infinite;
 }
 
@@ -80,10 +89,11 @@ h1 {
 button {
   padding: 1rem 3rem;
   border-radius: 10px;
-  border: 1px solid #fff;
+  border: 1px solid var(--text-color);
   background-color: transparent;
-  color: #fff;
-  text-shadow: 0 1px 15px #3100e4, 0 0px 30px #0026ff, 0 0px 50px #566fff77;
+  color: var(--text-color);
+  text-shadow: 0 1px 15px var(--primary-color), 0 0px 30px var(--shade-primary),
+    0 0px 50px var(--shadow-primary);
   animation: shine 3s forwards, flicker 5s infinite;
   font-size: 1rem;
   cursor: pointer;
@@ -99,18 +109,19 @@ button:hover {
   36%,
   75% {
     color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #658eff,
-      -0.2rem 0.1rem 1rem #658eff, 0.2rem 0.1rem 1rem #658eff,
-      0 -0.5rem 2rem #002fff, 0 0.5rem 3rem #002fff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem var(--shade-primary),
+      -0.2rem 0.1rem 1rem var(--shade-primary),
+      0.2rem 0.1rem 1rem var(var(--shadow-primary)),
+      0 -0.5rem 2rem var(--primary-color), 0 0.5rem 3rem var(--primary-color);
   }
   28%,
   33% {
-    color: #658eff;
+    color: var(--secondary-color);
     text-shadow: none;
   }
   82%,
   97% {
-    color: #002fff;
+    color: var(--primary-color);
     text-shadow: none;
   }
 }
@@ -122,9 +133,10 @@ button:hover {
   }
   100% {
     color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #658eff,
-      -0.2rem 0.1rem 1rem #658eff, 0.2rem 0.1rem 1rem #658eff,
-      0 -0.5rem 2rem #002fff, 0 0.5rem 3rem #002fff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem var(--secondary-color),
+      -0.2rem 0.1rem 1rem var(--secondary-color),
+      0.2rem 0.1rem 1rem var(--secondary-color),
+      0 -0.5rem 2rem var(--primary-color), 0 0.5rem 3rem var(--primary-color);
   }
 }
 
