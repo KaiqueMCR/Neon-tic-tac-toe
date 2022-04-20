@@ -1,5 +1,17 @@
 # Neon tic-tac-toe
 
+<div align="center">
+
+![GitHub top language](https://img.shields.io/github/languages/top/KaiqueMCR/Neon-tic-tac-toe?color=%232965f1)
+![GitHub](https://img.shields.io/github/license/KaiqueMCR/Neon-tic-tac-toe)
+![GitHub repo size](https://img.shields.io/github/repo-size/KaiqueMCR/Neon-tic-tac-toe)
+![GitHub issues](https://img.shields.io/github/issues/KaiqueMCR/Neon-tic-tac-toe)
+![GitHub forks](https://img.shields.io/github/forks/KaiqueMCR/Neon-tic-tac-toe)
+![GitHub stars](https://img.shields.io/github/stars/KaiqueMCR/Neon-tic-tac-toe)
+
+</div>
+
+
 This repo is a project built from PROGRAMADOR BR course. It is a tic-tac-toe web game build with HTML, CSS, and JavaScript. Using MVC design pattern.
 
 ## Screenshot
